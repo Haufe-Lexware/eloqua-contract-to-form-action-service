@@ -1,0 +1,69 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: white;
+  height: 100%; 
+}
+
+a {
+  color: #00B7FF;
+}
+
+#textUpdate{
+    margin-top: 50px;
+}
+.saveButton {
+    position: absolute;
+    left: 58px;
+    width: 100px;
+    height:40px;
+    margin-top:20px;
+    
+    font-weight: bold; 
+} 
+
+.formField{
+    font-weight: bold;
+}
+
+#configurationSelect {
+    padding: 30px;
+}
+
+table th {
+    text-align: left;
+    
+    padding:21px 20px 21px 20px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+
+table td {
+    padding:2px 20px 2px 20px; /* top, right, bottom, left*/
+    border:none;
+    font-weight: bold;
+}
+
+/*table tr {
+    
+}
+*/
+table {
+    border-collapse: collapse;
+    margin:20px 0px 0px 0px;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+
+}
+

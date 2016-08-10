@@ -1,0 +1,22 @@
+db:
+  image: "mongo:latest"
+  container_name: "mongo_container"
+  ports:
+    - "27017:27017"
+  command: "mongod--smallfiles --dbpath /data/db"
+web:
+  image: "your-user/node-app"
+  container_name: "node_app_container"
+  #command: npm start
+  volumes:
+    - .:/ssmpapp
+  ports:
+    - "0.0.0.0:3000:3000"
+  links:
+    - db
+  environment:
+    PORT: 3000 # this is optional, allows express to use process.env.PORT instead of a raw 3000
+    #credentials to login to Eloqua
+    SITE: ''#site  
+    USER: ''#user
+    PASS: ''#pass

@@ -1,0 +1,18 @@
+link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+div(class="container")
+    table(class="table table-striped")
+        thead(class="thead-default")
+            tr
+                th 
+                    p(stype="font-size:14px;") Dieser Kunde ist zu folgenden Themen aktiv:
+                th
+                    p(stype="font-size:14px;") Intensität
+        tbody
+            each score in contactScore
+                tr
+                    td(width="60%")
+                        p(style="margin-bottom: 0px; font-size:14px;") #{score.model.name}
+                    td(width="40%")
+                        .progress(style="margin-bottom: 0px;")
+                            .progress-bar(role="progressbar" aria-valuenow="#{score.aspectScores[1].unmappedScore}" aria-valuemin="0" aria-valuemax="100" style="width: #{score.aspectScores[1].unmappedScore}%")
+                                span #{score.aspectScores[1].unmappedScore}%
